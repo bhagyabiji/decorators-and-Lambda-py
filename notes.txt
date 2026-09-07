@@ -1,0 +1,18 @@
+Python Decorators
+-----------------
+-  add extra behavior to a function, without changing the function's code.
+- Decorators is a function that takes another fn as input and return a new function
+
+Arguments in the Decorated Function
+-----------------------------------
+Functions that require arguments can also be decorated, just make sure you pass the arguments to the wrapper function
+
+Python Lambda
+-------------
+- small anonymous function.
+- can take any number of arguments, but can only have one expression
+    SYNTAX
+    -----
+    lambda arguments : expression 
+ -expression is executed and the result is returned
+ 
