@@ -90,3 +90,39 @@ str = ["apple", "pie", "banana", "cherry"]
 sort_str = sorted(str, key = lambda a: len(a))
 print(sort_str)
 
+
+
+print("---------------")
+
+#factorial
+def factorial(n):
+  #base case
+  if n==0 or n==1:
+    return 1
+  #recursive case
+  else:
+    return n*factorial(n-1)
+print(factorial(5))
+
+print("---------------")
+
+#fibonacci series
+def fibonacci(n):
+  if n <= 1:
+    return n
+  else:
+    return fibonacci(n-1) + fibonacci(n-2)
+print(fibonacci(7))
+
+print("---------------")
+
+#Calculate the sum of all elements in a list
+def sun(n):
+  if len(n) == 0:
+    return 0
+  else:
+    return n[0] + n[1:]
+
+my_list = [1,2,3,4,5]
+print(sum(my_list))
+
