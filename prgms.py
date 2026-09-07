@@ -57,4 +57,10 @@ print(m(2,3))
 p = lambda r,s,t : r+s+t
 print(p(4,6,2))
 
+print("---------------")
+
+def myfunc(n):
+  return lambda a: a*n
+mydouble = myfunc(2)
+print(mydouble(11))
 
