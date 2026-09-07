@@ -64,3 +64,29 @@ def myfunc(n):
 mydouble = myfunc(2)
 print(mydouble(11))
 
+print("------map()---------")
+
+num = [2,4,6,8]
+doubled = list(map(lambda a: a*2, num))
+print(doubled)
+
+print("-------filter()--------")
+
+#Filter out odd numbers from a list
+numb = [1,7,2,4,5,3,8,11]
+odd = list(filter(lambda x : x%2 !=0, numb))
+print(odd)
+
+
+print("-------sorted()--------")
+
+#Sort a list of tuples by the second element
+students = [("Emil", 25), ("Tobias", 22), ("Linus", 28)]
+sort_stud = sorted(students, key = lambda x: x[1])
+print(sort_stud)
+
+#Sort strings by length
+str = ["apple", "pie", "banana", "cherry"]
+sort_str = sorted(str, key = lambda a: len(a))
+print(sort_str)
+

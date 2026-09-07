@@ -24,3 +24,16 @@ Say you have a function definition that takes one argument, and that argument wi
 
 Lambda with Built-in Functions
 ------------------------------
+Lambda functions are commonly used with built-in functions like map(), filter(), and sorted()
+
+map()
+-----
+applies a function to every item in an iterable
+
+filter()
+--------
+creates a list of items for which a function returns True
+
+sorted()
+--------
+use a lambda as a key for custom sorting
