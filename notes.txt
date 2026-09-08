@@ -59,3 +59,50 @@ print(factorial(5))
 
 - Recursion with Lists
 Recursion can be used to process lists by handling one element at a time
+
+Python has a recursion limit of 1000- can change the limit by importing sys , sys,recursionlimit(2000)
+
+Generators
+----------
+- is a function which ca pause and resume their execution
+-if called this function, it returns a Generator object, which is an iterator.
+
+- Generator iterate over the data without storing the entire dataset
+- here instead of return we use yield keyword, this keywordmakes a function Generator
+- when yield is calles the function state is saved and it returns the value. if called again, it continues from where it left.
+
+- return keyword will terminates the function while the yield keyword pauses and can be called multiple times.
+
+- Generators are memory-efficient, coz they dontstores everything in memory
+- large datasets, generators save memory
+
+- manually iterate through a generator using the next() function
+
+- create generators using generator expressions with parentheses instead of square brackets
+
+Generator Methods
+-----------------
+send() -  send a value to the generator
+close() - stops the generator
+
+
+PYTHON RANGE
+------------
+range() - returns an immutable sequence of numbers, commonly used for looping a specific number of times
+
+    range(start, stop, step)
+
+ - one argument, the argument represents the stop value
+ - start argument is optional, if not defaults to 0
+
+- range(10) returns 0 to 9 
+- range(3, 10) returns a sequence of each number from 3 to 9
+- range(3, 10, 2) returns a sequence of each number from 3 to 9, with a step of 2
+
+- ranges() used often in for loops to iterate over a sequence of numbers
+
+- ranges can be sliced to extract a subsequence
+
+- Ranges support membership testing with the in operator. return value is True when the number is present in the range, and False when it is not.
+
+- 

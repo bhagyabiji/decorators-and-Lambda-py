@@ -126,3 +126,60 @@ def sun(n):
 my_list = [1,2,3,4,5]
 print(sum(my_list))
 
+import sys
+print(sys.getrecursionlimit())
+
+print("-------------")
+
+#Generator that yields numbers
+def num_count(n):
+  count = 1
+  while count<=n:
+    yield count
+    count += 1
+
+for num in num_count(5):
+  print(num)
+
+
+print("----------------")
+
+#next() generator
+def simple_gen():
+  yield "Happy"
+  yield "Birthday"
+  yield "To You"
+
+gen = simple_gen()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+
+print("----------------")
+
+list_comp = [x*x for x in range(5)]
+print(list_comp)
+
+gen_exp = (x*x for x in range(5))
+print(gen_exp)
+print(list(gen_exp))
+
+print("----------------")
+
+#Create a range of numbers from 0 to 9
+x = range(3,10)
+print(x)
+print(list(x))
+
+print("----------------")
+
+print(list(range(5)))
+
+print("----------------")
+
+r = range(10)
+print(r[2])
+print(r[:3])
+
+m = range(0, 10, 2)
+print( 6 in r)
