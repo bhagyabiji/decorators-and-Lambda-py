@@ -105,4 +105,4 @@ range() - returns an immutable sequence of numbers, commonly used for looping a 
 
 - Ranges support membership testing with the in operator. return value is True when the number is present in the range, and False when it is not.
 
-- 
+- en() function to get the number of elements in the range.
